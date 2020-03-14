@@ -35,8 +35,3 @@ server <- function(input, output) {
 }
 
 shinyApp(ui = ui, server = server)
-
-km_fit <- surv_fit(Surv(OS_time,OS) ~TTN, data = fourendpints)
-ggsurvplot(km_fit,  data= fourendpints,  risk.table = TRUE)
-
-rm(km_fit)
