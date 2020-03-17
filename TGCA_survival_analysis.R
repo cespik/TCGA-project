@@ -262,24 +262,5 @@ fourendpints$OS_time <- as.numeric(as.character(fourendpints$OS_time))
 
 
 
-Clin$Gender_concept_id[Clin$gender == "male"] <- 8507
-Clin$Gender_concept_id[Clin$gender == "female"] <- 8532
-table(Clin$Gender_concept_id)
-
-
-Clin$Race_concept_id[Clin$race == "black or african american"] <- 8516
-Clin$Race_concept_id[Clin$race == "asian"] <- 8515
-Clin$Race_concept_id[Clin$race == "white"] <- 8527
-Clin$Race_concept_id[Clin$race == "not reported"] <- "NA"
-table(Clin$Race_concept_id)
-
-Clin$Ethnicity_concept_id[Clin$ethnicity == "not reported"] <- "NA"
-Clin$Ethnicity_concept_id[Clin$ethnicity == "hispanic or latino"] <- 38003563
-Clin$Ethnicity_concept_id[Clin$ethnicity == "not hispanic or latino"] <- 38003564
-table(Clin$Ethnicity_concept_id)
-
-
-
-
 
 
